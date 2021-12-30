@@ -16,4 +16,5 @@ CHIP RAM512 {
 
     PARTS:
     // Put your code here:
+    DMux8Way
 }
