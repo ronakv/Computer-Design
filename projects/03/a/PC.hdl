@@ -26,7 +26,8 @@ CHIP PC {
     Mux16(a = out2, b = out3, sel = incTminus1, out = out4);
     
     Bit(in = load, load = true, out = loadTminus1);
-    Mux16(a = out4, b = in, sel = loadTminus1, out = out5);
+    Register(in = in, load = true, out = inTminus1);
+    Mux16(a = out4, b = inTminus1, sel = loadTminus1, out = out5);
     
     Bit(in = reset, load = true, out = resetTminus1);
     Mux16(a = out5, b[0..15] = false, sel = resetTminus1, out = out1, out = out);
