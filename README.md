@@ -12,3 +12,6 @@ Using the chips designed in the previous section, a 16 bit Adder is first built 
 
 ## Project 3: Random Access Memory (RAM)
 Using a Data Flip Flop (DFF) as a primtive chip, a 16 bit register is built, multiple of which are then stacked to design a 32MB RAM.
+
+## Project 4: Machine Language
+Multiplication and screen colouring are programmed using Assembly Language.
