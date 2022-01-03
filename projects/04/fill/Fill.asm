@@ -12,3 +12,64 @@
 // the screen should remain fully clear as long as no key is pressed.
 
 // Put your code here.
+(START)
+    @i
+    M=0
+    @24576
+    D=M
+    @PRESS
+    D;JNE
+(PRESS)
+    @i
+    D=M
+    @8191
+    D=D-A
+    @START
+    D;JGE
+    @i
+    D=M
+    @SCREEN
+    A=A+D
+    M=-1
+
+    @24576
+    D=M
+    @NPRESS
+    D;JEQ
+    @i
+    M=M+1
+    @PRESS
+    0;JMP
+    
+(NPRESS)
+    @i
+    M=0
+    D=M
+(NPRESLOOP)
+    @i
+    D=M
+    @8191
+    D=D-A
+    @START
+    D;JGE
+    @i
+    D=M
+    @SCREEN
+    A=A+D
+    M=0
+    @24576
+    D=M
+    @START
+    D;JNE
+    @i
+    M=M+1
+    @NPRESLOOP
+    0;JMP
+    
+    0;JMP
+    
+    
+
+    
+
+
