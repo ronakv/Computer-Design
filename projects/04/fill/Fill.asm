@@ -25,7 +25,7 @@
     @8191
     D=D-A
     @START
-    D;JGE
+    D;JGT
     @i
     D=M
     @SCREEN
@@ -51,7 +51,7 @@
     @8191
     D=D-A
     @START
-    D;JGE
+    D;JGT
     @i
     D=M
     @SCREEN
