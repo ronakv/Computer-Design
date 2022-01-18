@@ -15,3 +15,6 @@ Using a Data Flip Flop (DFF) as a primtive chip, a 16 bit register is built, mul
 
 ## Project 4: Machine Language
 Multiplication and screen colouring are programmed using Assembly Language.
+
+## Project 5: Computer Architecture (CPU and Memory)
+Starting with the ALU, a full 16 bit CPU is designed along with a ROM as instruction memory and a data memory comprising a 16K RAM, 256 x 512 px screen and a keyboard input. 
